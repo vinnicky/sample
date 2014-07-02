@@ -2,7 +2,7 @@
 # Bootstrapping a modern Python ecosystem
 #
 
-node[:ubuntu_python_packages].each do |pkg|
+node[:ubuntu_python_packages] do |pkg|
     package pkg do
         :upgrade
     end
